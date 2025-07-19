@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wearism</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #ffd6eb;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search {
+      flex: 1;
+      margin: 0 20px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .icons span {
+      margin-left: 15px;
+    }
+
+    .banner {
+      background: #ffa9d2;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .banner-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .banner-content p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .banner-content button {
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .main {
+      display: flex;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sidebar button {
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .sidebar button.active {
+      background: #9d75f7;
+      color: white;
+      font-weight: bold;
+    }
+
+    .products {
+      flex: 1;
+      padding-left: 30px;
+    }
+
+    .products h1 {
+      margin-bottom: 20px;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .filters button {
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background: white;
+      cursor: pointer;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">wearism</div>
+    <input type="text" placeholder="Search for items, brands and inspiration" class="search"/>
+    <div class="icons">
+      <span>❤</span>
+      <span>🛒</span>
+      <span>US</span>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="banner-content">
+        
+      <h2>$20 OFF $100 PLUS, <br/> GET FREE NEXT-DAY DELIVERY</h2>
+      <p>With code: 20100</p>
+      <button>OK</button>
+    </div>
+  </section>
+
+  <main class="main">
+    <aside class="sidebar">
+      <button class="active">NEW IN</button>
+      <button>COATS</button>
+      <button>TOPS</button>
+      <button>KNITWEAR</button>
+    </aside>
+
+    <section class="products">
+      <h1>COATS</h1>
+      <div class="filters">
+        <button>Sort</button>
+        <button>Product type</button>
+        <button>Style</button>
+        <button>Size</button>
+        <button>Colour</button>
+        <button>Price Range</button>
+      </div>
+      <div class="product-grid">
+        <div class="product-card"><img src="https://i.pinimg.com/1200x/45/e9/e8/45e9e8c442d723c48f7c4d1e55e84b62.jpg" alt=""><p>Gray</p></div>
+        <div class="product-card"><img src="https://i.pinimg.com/1200x/f5/76/02/f5760275619393da0f8609bd549b8cae.jpg" alt=""><p>Dark Green</p></div>
+        <div class="product-card"><img src="https://i.pinimg.com/1200x/d9/a6/cc/d9a6cc82106d6178f37c5246a54f1a3f.jpg" alt=""><p>Black</p></div>
+        <div class="product-card"><img src="https://i.pinimg.com/736x/66/c2/71/66c271d5d8cd94e7716aa826d5052767.jpg" alt=""><p>Full Look</p></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
